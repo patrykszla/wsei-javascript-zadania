@@ -1,10 +1,13 @@
-function countHello(number){
-    let count = 0;
-   const interval = setInterval(()=>{
-    count++;
-    console.log("Hello", count);
-    if(number === count){
-         clearInterval(interval);
-     }})
+function distFromAverage(array){
+    let sum = 0;
+
+    array.forEach(element => {
+        sum += element;
+    })
+
+    let average = sum / array.length;
+
+    return array.map(element => {
+        return element - average;
+    })
 }
-countHello(5);
