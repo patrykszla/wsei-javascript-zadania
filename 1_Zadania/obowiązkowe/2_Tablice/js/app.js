@@ -78,7 +78,7 @@
 // sortArray([145,11,3,64,4,6,10])
 
 
-// zadanie 7
+/* // zadanie 7
 function addArrays(arr1, arr2){
     const array1 = arr1.length>arr2.length? arr1:arr2;
     const array2 = arr1.length>arr2.length? arr2:arr1;
@@ -98,3 +98,4 @@ addArrays([8,3,22], [1,3,2]);
 addArrays([2,3,1,5,3,5], [3,1,76,1]);
 
 
+ */
