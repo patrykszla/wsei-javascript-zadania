@@ -8,7 +8,10 @@
 //     primeMinisters: ['mama', 'tata']
 // }
 
-//  console.log(city);
+// console.log(city.capital);
+// console.log(city.population);
+// console.log(city.president);
+// console.log(city.primeMinister);
 
 // for(key in city) {
 //     console.log(key);
@@ -19,13 +22,14 @@
 // let timeMachine = {
 //     shape: 'hehe',
 //     model: 'taaa',
-//     run: function(date, place){
-//         console.log('przeniesienie w czasie')
-//     }
+//     run(date, place) {
+//     return "Jest " + date + " - " + place;
+//   }
 // }
 
-// console.log(timeMachine);
-// timeMachine.run();
+// console.log(timeMachine.shape);
+// console.log(timeMachine.model);
+// console.log(timeMachine.run("12.12.2012", "Warszawa"));
 
 
 // ZADANIE 1!!
@@ -36,9 +40,9 @@
 //     numberOfPages: '111'
 // }
 
-// for(key in book) {
-//     console.log(key);
-// }
+// console.log(book.title);
+// console.log(book.age);
+// console.log(book.numberOfPages);
 
 // KOPIOWANIE OBIEKTOW
 
@@ -67,28 +71,18 @@
 // let obj = {
 //     title: 'tytul',
 //     servings: '2',
-//     ingredients: []
 // }
 
 // obj.ingredients = ['maslo', 'jablko'];
-// console.log(obj);
+// console.log(recipe.title);
+// console.log(recipe.servings);
+// console.log(recipe.ingredients);
 
-// ZADANIE 4
+// const spoon = {
+//     isExist: true
+// };
 
-// var movie = {
-//     director: "Peter Jackson",
-//     writers: [" J.R.R. Tolkien ", "Fran Walsh", "Philippa Boyens", "Peter Jackson"],
-//     stars: ["Elijah Wood", "Ian McKellen", "Orlando Bloom"],
-//     country: "New Zealand | USA",
-//     budget: "$93,000,000",
-//     imdbPoints: 8.8,
-//     year: 2001,
-//     time: "2h 58 min",
-//     category: " Adventure, Drama, Fantasy"
-// }
+// const fork = spoon;
+// fork.isExist = false;
+// spoon.isExist ? console.log("Łyżka istnieje") : console.log("Łyżka nie istnieje");
 
-// for (key in movie){
-//     console.log(key);
-// }
-
-// console.log(movie);

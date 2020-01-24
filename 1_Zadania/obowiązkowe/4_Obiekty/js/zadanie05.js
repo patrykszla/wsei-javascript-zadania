@@ -31,3 +31,10 @@ var animals = [
     }
 
 ]
+
+for (let i = 0; i < animals.length; i++) {
+    console.log("ANIMAL NUMBER:" + i);
+    for (let item in animals[i]) {
+        console.log(item + " : " + animals[i][item]);
+    }
+}
