@@ -1,19 +1,29 @@
-function Basket(product, price) {
-    this.product = ['mieso'];
-    this.price = 0;
-}
+///Zadanie 0
+var Basket = function () {
+    this.products = [];
+    this.sum = 0;
+};
 
- Basket.prototype.addProduct = function(name, price) {
-    let newProduct = {
-        name: name,
-        price: price
-    };
- }
+Basket.prototype.addProduct = function (name, price) {
+    this.sum = this.sum + price;
+    this.products.push({ name: name, price: price });
+};
+Basket.prototype.showBasket = function () {
+    return this.products.map((element, index) => {
+        console.log(element.name + ' - ' + element.price + ' zł');
+        if (index == this.products.length - 1) {
+            console.log('Cena za wszystkie produkty: ' + this.sum);
+        }
+    });
+};
 
-Basket.prototype.showBasket = function() {
-    console.log(this.product)
-}
+var aliceBasket = new Basket();
+aliceBasket.addProduct("pomidor", 10);
+aliceBasket.addProduct("arbuz", 40);
+aliceBasket.showBasket();
 
-console.log(Basket);
-let m = new Basket();
-console.log(m);
+var bruceBasket = new Basket();
+bruceBasket.addProduct("rice", 10);
+bruceBasket.addProduct("grzyby mun", 50);
+bruceBasket.addProduct("tofu", 20);
+bruceBasket.showBasket();

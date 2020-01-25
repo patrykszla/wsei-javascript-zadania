@@ -1,4 +1,22 @@
+document.addEventListener("DOMContentLoaded", function () {
+    let parents = document.querySelectorAll(".parent");
 
-// ZADANIE 0a
+    for (let i = 0; i < parents.length; i++) {
+        let parent = parents[i];
+        
+        parent.addEventListener("mouseenter", function () {
+            let children = parent.querySelector(".children");
+            children.style.display = "block";
+        });
+        parent.addEventListener("mouseleave", function () {
 
-document.getElementsByClassName('parent')
+            function hideChildrenElement(element) {
+                let children = element.querySelector(".children");
+                children.style.display = "none";
+            }
+            hideChildrenElement(this);
+        })
+    }
+
+});
+© 2020 GitHub, Inc.
